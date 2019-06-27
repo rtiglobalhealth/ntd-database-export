@@ -40,4 +40,22 @@ mysql --defaults-extra-file=creds.txt -h production.c6u52zchwjde.us-east-1.rds.a
 echo "	data_disease_demography"
 mysql --defaults-extra-file=creds.txt -h production.c6u52zchwjde.us-east-1.rds.amazonaws.com  ntd --default-character-set=utf8mb4 --batch --raw < data_disease_demography.sql > output/data_disease_demography.tsv
 
+---
+echo "	data_disease_schisto"
+mysql --defaults-extra-file=creds.txt -h production.c6u52zchwjde.us-east-1.rds.amazonaws.com  ntd --default-character-set=utf8mb4 --batch --raw < data_disease_schisto.sql > output/data_disease_schisto.tsv
+
+echo "	data_disease_sch_tx_indicators"
+mysql --defaults-extra-file=creds.txt -h production.c6u52zchwjde.us-east-1.rds.amazonaws.com  ntd --default-character-set=utf8mb4 --batch --raw < data_disease_sch_tx_indicators.sql > output/data_disease_sch_tx_indicators.tsv
+
+echo "	data_disease_tx_indicators"
+mysql --defaults-extra-file=creds.txt -h production.c6u52zchwjde.us-east-1.rds.amazonaws.com  ntd --default-character-set=utf8mb4 --batch --raw < data_disease_tx_indicators.sql > output/data_disease_tx_indicators.tsv
+
+echo "	data_program_me"
+mysql --defaults-extra-file=creds.txt -h production.c6u52zchwjde.us-east-1.rds.amazonaws.com  ntd --default-character-set=utf8mb4 --batch --raw < data_program_me.sql > output/data_program_me.tsv
+
+echo "	data_program_mapping"
+mysql --defaults-extra-file=creds.txt -h production.c6u52zchwjde.us-east-1.rds.amazonaws.com  ntd --default-character-set=utf8mb4 --batch --raw < data_program_mapping.sql > output/data_program_mapping.tsv
+
+echo "	data_program_training"
+mysql --defaults-extra-file=creds.txt -h production.c6u52zchwjde.us-east-1.rds.amazonaws.com  ntd --default-character-set=utf8mb4 --batch --raw < data_program_training.sql > output/data_program_training.tsv
 

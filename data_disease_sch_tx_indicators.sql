@@ -1,0 +1,1 @@
+SELECT * FROM data_disease_sch_tx_indicators;

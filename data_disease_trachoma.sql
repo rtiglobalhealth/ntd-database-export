@@ -1,1 +1,3 @@
-SELECT * FROM data_disease_trachoma;
+SELECT data_disease_trachoma.* FROM data_disease_trachoma
+INNER JOIN data_files df ON data_disease_trachoma.data_files_id = df.data_files_id
+INNER JOIN submission_latest_vw ON submission_latest_vw.submission_id = df.submission_id;
