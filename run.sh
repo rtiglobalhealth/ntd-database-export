@@ -59,3 +59,6 @@ mysql --defaults-extra-file=creds.txt -h production.c6u52zchwjde.us-east-1.rds.a
 echo "	data_program_training"
 mysql --defaults-extra-file=creds.txt -h production.c6u52zchwjde.us-east-1.rds.amazonaws.com  ntd --default-character-set=utf8mb4 --batch --raw < data_program_training.sql > output/data_program_training.tsv
 
+
+
++zip -r ntd_data.zip output
